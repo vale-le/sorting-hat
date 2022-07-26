@@ -1,0 +1,11 @@
+[Unit]
+Description=discord-bot
+
+[Service]
+Type=simple
+User=ubuntu
+Environment=DISCORD_BOT_TOKEN=<TOKEN>
+ExecStart=/home/ubuntu/sorting-hat/sorting-hat.py
+
+[Install]
+WantedBy=multi-user.target
